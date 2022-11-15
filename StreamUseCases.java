@@ -62,8 +62,10 @@ public class StreamUseCases
         
         //try using streams
         String listCommaSeparated = String. join(",", listOfStrings);
-        
+        String CommaSeparatedlist = listOfStrings.stream()
+                                    .collect(Collectors.joining(","));
         System.out.println(listCommaSeparated.toUpperCase());
+        System.out.println(CommaSeparatedlist.toUpperCase());
         //print the count
     }
 
